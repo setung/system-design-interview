@@ -1,4 +1,4 @@
-package ch05;
+package ch05_consistent_hash;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -55,7 +55,7 @@ public class ConsistentHash {
     }
 
     public static void main(String[] args) {
-        ConsistentHash consistentHash = new ConsistentHash(3); // 가상 노드 100개
+        ConsistentHash consistentHash = new ConsistentHash(3); // 가상 노드 3개
 
         // 노드 추가
         consistentHash.addNode("NodeA");
